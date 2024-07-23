@@ -21,7 +21,7 @@ body {
 
 .navbar {
     width: 250px;
-    height: 265px;
+    height: 280px;
     background: url('Assets/Images/aero.png') no-repeat center center;
     background-size: 275%;
     position: absolute;
@@ -54,7 +54,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .logo img {
@@ -74,7 +75,7 @@ body {
     text-align: center;
     color: #fff;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-    padding: 5px;
+    padding: 8px;
     font-size: 14px;
     margin: 5px 0;
     position: relative;
@@ -249,16 +250,20 @@ body {
     margin-top: 20px;
     padding: 0 15px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .footer-links p {
     margin: 0;
     font-size: 14px;
-    opacity: 0.8;
+    color: #ffffff; /* Set the text color */
+    text-shadow: 0 0 3px #fff, /* Lighter white glow */
+                0 0 6px #eee, /* Increased intensity of white glow */
 }
 
+
 .footer-links a {
-    color: #00bfff;
+    color: #eee;
     text-decoration: none;
 }
 
