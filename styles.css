@@ -335,6 +335,10 @@ body {
         flex: 1 1 100%;
     }
 
+    .text-container p {
+        display: none;
+    }
+
     .footer-links {
         flex-direction: row;
         overflow-x: auto;
