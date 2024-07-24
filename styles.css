@@ -256,9 +256,9 @@ body {
 .footer-links p {
     margin: 0;
     font-size: 14px;
-    color: #ffffff; /* Set the text color */
-    text-shadow: 0 0 3px #fff, /* Lighter white glow */
-                0 0 6px #eee, /* Increased intensity of white glow */
+    color: #ffffff;
+    text-shadow: 0 0 3px #fff,
+                0 0 6px #eee
 }
 
 
