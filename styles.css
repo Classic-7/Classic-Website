@@ -20,8 +20,8 @@ body {
 }
 
 .navbar, .content {
-    position: relative; /* Ensure positioning context for the pseudo-element */
-    overflow: hidden; /* Hide any overflow caused by the pseudo-element */
+    position: relative;
+    overflow: hidden;
 }
 
 .navbar::after, .content::after {
@@ -34,7 +34,7 @@ body {
     background: url('Assets/Images/aero.png') no-repeat center center;
     background-size: cover;
     opacity: 0.5;
-    z-index: -1; /* Ensure the overlay is behind other content */
+    z-index: -1;
 }
 
 .navbar {
