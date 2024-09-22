@@ -105,6 +105,11 @@ body {
     display: block;
     width: 100%;
     height: 100%;
+    transition: color 0.3s ease;
+}
+
+.link {
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
 }
 
 .link:hover {
@@ -276,6 +281,7 @@ body {
     font-size: 14px;
     color: #ffffff;
     text-shadow: 0 0 3px #ccc;
+    text-align: center;
 }
 
 .footer-links a {
