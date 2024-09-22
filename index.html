@@ -58,10 +58,15 @@
             </div>
             <p>Download Classic 7 from our mirrors!</p>
             <a class="download-button" href="https://downloads.starix.lol/isos/Classic%207%200.3.iso">Download (0.3)</a>
-            <a class="download-button" href="https://downloads.starix.lol/isos/Classic%207%200.2.1.iso">Download (0.2.1)</a>
-            <a class="download-button" href="https://downloads.starix.lol/isos/Classic%207%200.2.iso">Download (0.2)</a>
-            <a class="download-button" href="https://downloads.starix.lol/isos/Classic%207%200.1.1.iso">Download (0.1.1)</a>
-            <a class="download-button" href="https://downloads.starix.lol/isos/Classic%207%200.1.iso">Download (0.1)</a>
+            
+            <div id="older-downloads" style="display: none;">
+                <a class="download-button" href="https://downloads.starix.lol/isos/Classic%207%200.2.1.iso">Download (0.2.1)</a>
+                <a class="download-button" href="https://downloads.starix.lol/isos/Classic%207%200.2.iso">Download (0.2)</a>
+                <a class="download-button" href="https://downloads.starix.lol/isos/Classic%207%200.1.1.iso">Download (0.1.1)</a>
+                <a class="download-button" href="https://downloads.starix.lol/isos/Classic%207%200.1.iso">Download (0.1)</a>
+            </div>
+            
+            <button id="toggle-button" onclick="toggleDownloads()">Show more versions</button>
         </div>
         <div id="page3" class="content">
             <div class="text-container">
@@ -170,21 +175,30 @@
     </div>
     <script>
         document.querySelectorAll('.link a').forEach(link => {
-            link.addEventListener('click', (event) => {
+            link.addEventListener('click', event => {
                 event.preventDefault();
+                const targetId = link.getAttribute('data-target');
+    
                 document.querySelectorAll('.content').forEach(content => {
                     content.classList.remove('active');
                 });
-                const targetId = link.getAttribute('data-target');
+    
                 document.getElementById(targetId).classList.add('active');
             });
         });
-
+    
         document.querySelectorAll('.content').forEach(content => {
-            if (content.id !== 'page1') {
-                content.classList.remove('active');
-            }
+            if (content.id !== 'page1') content.classList.remove('active');
         });
-    </script>
+    
+        function toggleDownloads() {
+            const olderDownloads = document.getElementById('older-downloads');
+            const toggleButton = document.getElementById('toggle-button');
+    
+            const isHidden = olderDownloads.style.display === 'none';
+            olderDownloads.style.display = isHidden ? 'block' : 'none';
+            toggleButton.textContent = isHidden ? 'Show fewer versions' : 'Show more versions';
+        }
+    </script>    
 </body>
 </html>
