@@ -12,6 +12,7 @@ body {
     font-family: "Segoe UI Custom", sans-serif;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .container {
@@ -238,7 +239,6 @@ body {
     background-color: #ffffff25;
     color: #fff;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     flex: 1 1 calc(33.333% - 20px);
     display: flex;
