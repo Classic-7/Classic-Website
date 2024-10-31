@@ -1,152 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta property="og:title" content="Classic 7">
-    <meta property="og:description" content="Welcome to Classic 7, the Windows 7 recreation that aims to be 1:1.">
-    <meta property="og:image" content="https://classic7.lol/Assets/Icons/favicon.png">
-    <meta property="og:url" content="https://classic7.lol">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Classic 7">    
-    <title>Classic 7</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="Assets/Logos/favicon.png" type="image/x-icon">
-</head>
-<body>
-    <div class="navbar-container">
-    <div class="navbar">
-        <div class="logo">
-            <img src="Assets/Logos/logo.png" alt="Classic Logo">
-        </div>
-            <div class="links">
-                <div class="link"><a data-target="page1">Home</a></div>
-                <div class="link"><a data-target="page2">Download</a></div>
-                <div class="link"><a data-target="page3">FAQ</a></div>
-                <div class="link"><a data-target="page4">Contact</a></div>
-            </div>
-        </div>
-    </div>
-    <div class="content-container">
-        <div id="page1" class="content active">
-            <div class="text-container">
-                <h2>Welcome to Classic 7</h2>
-                <p>Relived nostalgia.</p>
-            </div>
-            <p>Classic 7 is a 10to7 mod that aims to look 1:1 with Windows 7 Ultimate.</p>
-            <p style="opacity: 0.65;">Keep in mind Classic 7 is not 100% accurate. We take criticism at our <a style="color: white;" href="https://discord.com/invite/Hr7tC837ZW">Discord</a> server.</p>
-            <a class="download-button" href="https://flush.eqilia.gay/c7/Classic%207%200.4.1.iso">Download (0.4.1)</a>
-            <div class="cards-container">
-                <div class="card">
-                    <img src="Assets/Icons/computer.ico" alt="Computer Icon">
-                    <h3>Your computer, redefined.</h3>
-                    <p>Experience a new wave of nostalgia from the look and feel of Classic 7.</p>
-                </div>
-                <div class="card">
-                    <img src="Assets/Icons/desktop.ico" alt="Desktop Icon">
-                    <h3><i>Almost</i> 1:1</h3>
-                    <p>Classic 7 tries to replicate the 1:1 feeling with Windows 7.</p>
-                </div>
-                <div class="card">
-                    <img src="Assets/Icons/explorer.ico" alt="Explorer Icon">
-                    <h3>Lightweight</h3>
-                    <p>Enjoy shiny glass with minimal performance impact.</p>
+<html>
+    <head>
+        <title>Classic 7</title>
+        <link rel="icon" type="image/x-icon" href="/Assets/Logos/favicon.png">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="spacer" style="height: 20px;"></div>
+        <div class="navbar">
+            <div class="navbar-content">
+                <img src="Assets/Logos/logo.png" class="logo" alt="Classic Logo">
+                <div class="navbar-link">
+                    <a class="link-navbar" href="/features.html">Features</a>
+                    <a class="link-navbar" href="https://flush.eqilia.gay/c7/Classic%207%200.4.1.iso">Download</a>
+                    <div class="images-links">
+                        <a class="link-navbar-img" href="/"><img src="Assets/Icons/discord.svg" alt="Discord Icon"></a>
+                        <a class="link-navbar-img" href="/"><img src="Assets/Icons/github.svg" alt="GitHub Icon"></a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="page2" class="content">
-            <div class="text-container">
-                <h2>Downloads</h2>
-                <p>Latest version: 0.4.1</p>
-            </div>
-            <p>Download Classic 7 from our mirrors!</p>
-            <a class="download-button" href="https://flush.eqilia.gay/c7/Classic%207%200.4.1.iso">Download (0.4.1)</a>
-            <a class="download-button" href="http://flush.eqilia.gay/Classic%207%200.4.1.iso.torrent">Download (0.4.1) (Torrent)</a>
-
-            <p>Unofficial mirrors:</p>
-            <a class="download-button" href="https://anno.servehttp.com/classic7-latest.iso">Download (0.4.1) (anno.servehttp.com)</a>
-            <a class="download-button" href="https://fm.freespyware.store/d/public/c7/Classic%207%200.4.iso?sign=ONbLYz0IQMsAkK-d--QA5ekRzNzWxv8AU23rBaSoa_A=:0">Download (0.4) (freespyware.store)</a>
-        </div>
-        <div id="page3" class="content">
-            <div class="text-container">
-                <h2>FAQ</h2>
-                <p>Some FAQ, idk.</p>
-            </div>
-            <h2>Classic 7's FAQ</h2>
-            <div>
-                <p><strong>"can i use classic 7 as a base for my project??"</strong></p>
-                <p>Sure, as long as you credit me and all the other people in README on the desktop.</p>
-                
-                <p><strong>"what version is classic 7 based on??"</strong></p>
-                <p>Classic 7 is based on Windows 10 21H2, specifically IoT Enterprise LTSC.</p>
-                
-                <p><strong>"does classic 7 work on windows xx?"</strong></p>
-                <p>Classic 7 is an ISO, not something like a transformation pack.</p>
-                
-                <p><strong>"the setup failed to validate the product key!! what can i do??"</strong></p>
-                <p>You're not supposed to use setup.exe on a pre-existing install. You are ment to flash the ISO to a USB drive using something like <a href="https://rufus.ie/en/">Rufus</a> or if you prefer <a href="https://www.ventoy.net/en/index.html">Ventoy</a>.</p>
-                
-                <p><strong>"can i use an ms account??? "</strong></p>
-                <p>No, you cannot. You can use it for apps only but not as a user as the logon screen does not like it.</p>
-                
-                <p><strong>"i need the ms store!!!"</strong></p>
-                <p>You can use this <a href="https://github.com/kkkgo/LTSC-Add-MicrosoftStore">tool</a> but support isn't guaranteed.</p>
-            </div>
-        
-            <h2>Known Issues and their fixes</h2>
-            <div>
-                <p><strong>"when im done with oobe i get other user!!!"</strong></p>
-                <p>This is a known issue which the fix to is unknown. You can login normally using the username and password boxes shown on that screen and it should never show again.</p>
-                
-                <p><strong>"when i open (link / app / file name here) i get the open with dialog and when i press ok it keeps reopening!!"</strong></p>
-                <p>You will need to set the file type in settings, soon you can in Control Panel in 0.5.</p>
-                
-                <p><strong>"i cant change my kb layout!!!"</strong></p>
-                <p>That option isn't available for now. It will be added sooner or later.</p>
-                
-                <p><strong>"my network folder doesn't work when i try to connect to my server!!"</strong></p>
-                <p>The fix for this is at <a href="https://discord.com/channels/1208574240136233030/1300805238248443984/1300825643658776688">this link</a>. (You will need to be in the Discord server.)</p>
+        <div class="spacer" style="height: 20px;"></div>
+        <div class="content-wrapper">
+            <div class="content">
+                <section class="main">
+                    <div class="section-left">
+                        <h2 class="header-section">Classic 7</h2>
+                        <h2 class="tagline-section">Your PC, refined once again.</h2>
+                        <a class="download-link" href="https://flush.eqilia.gay/c7/Classic%207%200.4.1.iso">Download now ➤</a>
+                    </div>
+                    <div class="section-right">
+                        <img class="desktop-image" src="Assets/Images/big-logo.png" alt="Classic 7">
+                    </div>
+                </section>
+                <section class="main">
+                    <div class="section-left">
+                        <img class="desktop-image-showcase" src="Assets/Images/showcase.png" alt="Classic 7">
+                    </div>
+                    <div class="section-right">
+                        <h2 class="header-section">All your favorites are still here.</h2>
+                        <h2 class="tagline-section">Windows Media Center, Paint, and yes, Purble Place.</h2>
+                        <a class="download-link" href="/features.html">⮜ View more features</a>
+                    </div>
+                </section>
+                <section class="main">
+                    <div class="section-left">
+                        <h2 class="header-section">Support at your fingertips.</h2>
+                        <h2 class="tagline-section">Join the Discord server for support and a nice community!</h2>
+                        <a class="download-link" href="https://discord.com/invite/Hr7tC837ZW">Join now ➤</a>
+                    </div>
+                    <div class="section-right">
+                        <img class="desktop-image" src="Assets/Images/discord.png" alt="Classic 7">
+                    </div>
+                </section>
             </div>
         </div>
-        <div id="page4" class="content">
-            <div class="text-container">
-                <h2>Contact</h2>
-                <p>Get in touch with us</p>
-            </div>
-            <p>For any inquiries or support, please contact us via our <a style="color: white;" href="https://discord.com/invite/Hr7tC837ZW">Discord</a> server.</p>
-            <p style="opacity: 0.5;">We currently have no other way to contact us.</p>
+        <div class="footer">
+            <p>Classic 7 is not affiliated with Microsoft and is a fan-project. Windows and the Windows Logo are property of Microsoft.</p>
         </div>
-        <div class="footer-links">
-            <p>This project is not affiliated with Microsoft Corporation. Windows and the Windows logo is owned by Microsoft.</p>
-            <a href="https://github.com/strxproject"><img src="Assets/Icons/github.svg"></a>
-            <a href="https://discord.com/invite/Hr7tC837ZW"><img src="Assets/Icons/discord.svg"></a>
-        </div>
-    </div>
-    <script>
-        document.querySelectorAll('.link a').forEach(link => {
-            link.addEventListener('click', event => {
-                event.preventDefault();
-                const targetId = link.getAttribute('data-target');
-    
-                document.querySelectorAll('.content').forEach(content => {
-                    content.classList.remove('active');
-                });
-    
-                document.getElementById(targetId).classList.add('active');
-            });
-        });
-    
-        document.querySelectorAll('.content').forEach(content => {
-            if (content.id !== 'page1') content.classList.remove('active');
-        });
-    
-        function toggleDownloads() {
-            const olderDownloads = document.getElementById('older-downloads');
-            const toggleButton = document.getElementById('toggle-button');
-    
-            const isHidden = olderDownloads.style.display === 'none';
-            olderDownloads.style.display = isHidden ? 'block' : 'none';
-            toggleButton.textContent = isHidden ? 'Show fewer versions' : 'Show more versions';
-        }
-    </script>    
-</body>
+    </body>
 </html>
