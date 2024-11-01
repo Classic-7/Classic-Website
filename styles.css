@@ -3,31 +3,31 @@
 }
 
 h1, h2, h3, p, span, a {
-    text-shadow: 
-    0px 0px 4px rgba(255, 255, 255, 0.4),  /* Soft outer glow */
-    0px 0px 8px rgba(255, 255, 255, 0.2)  /* Medium glow */
+    text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.4), 
+                 0px 0px 8px rgba(255, 255, 255, 0.2);
 }
 
 body {
-    background: url(Assets/Images/background.jpg);
+    background: url(Assets/Images/background.jpg) no-repeat center center;
     background-size: cover;
     color: white;
 }
 
 .navbar, .content {
+    max-width: 900px;
+    margin: 0 auto;
     position: relative;
     background: url(Assets/Images/aero.png);
-    background-size: cover;
+    background-size: 250%;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .navbar {
     display: flex;
     flex-direction: row;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-radius: 5px;
-    border: 1.5px solid #ccc;
-    overflow: hidden;
+    padding: 15px 0;
 }
 
 .navbar::before, .content::before {
@@ -37,8 +37,8 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     z-index: -1;
 }
 
@@ -49,25 +49,27 @@ body {
 .navbar-content {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
     align-items: center;
+    margin: 0 auto;
     width: 850px;
 }
 
 .link-navbar, .link-navbar-img {
-    font-size: 18px;
     color: #fff;
     text-decoration: none;
+}
+
+.link-navbar {
+    font-size: 18px;
     margin-right: 20px;
 }
 
 .link-navbar-img {
-    width: 32px;
+    margin-right: 10px;
 }
 
 .navbar-link {
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 
@@ -75,19 +77,13 @@ body {
     margin-right: 0;
 }
 
-.navbar, .content {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
 .content {
     border-radius: 3px;
-    border: 1.5px solid #ccc; 
-    height: 900px;
+    height: 1050px;
 }
 
 section {
-    height: 300px;
+    height: 350px;
 }
 
 .main {
@@ -96,12 +92,11 @@ section {
     align-items: center;
 }
 
-.section-left {
-    padding-left: 60px;
+.section-left, .section-right {
+    padding: 0 60px;
 }
 
 .section-right {
-    padding-right: 60px;
     text-align: right;
 }
 
@@ -130,7 +125,7 @@ section {
 }
 
 .footer {
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
     text-align: center;
 }
